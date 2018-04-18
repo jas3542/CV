@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { PicComponent } from '../Components/pic/pic.component';
 import { SocialComponent } from '../Components/social/social.component';
 import { DescriptionComponent } from '../Components/description/description.component';
+import { InterestsComponent } from '../Components/interests/interests.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { DescriptionComponent } from '../Components/description/description.comp
     AppComponent,
     PicComponent,
     SocialComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,41 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 285px;
+    transition: 0.3s;
+    /* margin: auto; */
+    
+    border-radius: 5px;
+}
+h1 {
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+ul {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    list-style-type: none;
+    /* list need to put 0 first.Otherwise there will be a space at the beginning*/
+    margin: 0;
+    padding: 0px 0px 10px 10px;
+    
+}
+
+li {
+    /* smooth transition between li's */
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+}
+li:hover{
+    font-size: 40px;
+    background: #f6f6f6;
+}
+
+
