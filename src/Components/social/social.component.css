@@ -1,4 +1,4 @@
-.card:hover {
+/* .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 a {
@@ -6,7 +6,11 @@ a {
     font-size: 22px;
     color: black;
     padding-top: 10px ;
-}
+} */
 img {
-    width: 20%;
+    width: 50%;
+    height: 90%;
+}
+.col {
+    text-align: center;
 }

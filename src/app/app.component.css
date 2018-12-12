@@ -1,4 +1,4 @@
-.page {
+/* .page {
     height: 100%;
     background-color: azure;
 }
@@ -19,4 +19,11 @@
     border-width: 1px;
     border-color: red;
     background-color: cadetblue;
+} */
+
+.card {
+    width: 20%;
+}
+.card-header {
+    padding: 0;
 }
