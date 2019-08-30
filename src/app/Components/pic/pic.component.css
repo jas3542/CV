@@ -1,0 +1,11 @@
+img {
+    width: 60%;
+    height: 70%;
+}
+.col{
+    word-break: normal;
+}
+h4, p{
+    text-align: center;
+}
+
