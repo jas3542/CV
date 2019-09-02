@@ -1,13 +1,5 @@
-
-<a class="section" href="http://www.instagram.com">
-    <img src="../../assets/instagram.png" alt="instagram">
+<a *ngFor="let sm of socialMedia"
+    class="section" 
+    href={{sm.website}}>
+    <img src="{{sm.imagePath}}" alt="{{sm.name}}">
 </a> 
-
-<a class="section" href="http://www.linkedin.com">
-    <img src="../../assets/linkedin.png" alt="linkedin">
-</a> 
-
-<a class="section" href="http://www.twitter.com">
-    <img src="../../assets/twitter.png" alt="twitter">
-</a>
-    

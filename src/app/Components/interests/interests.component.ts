@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'interests',
@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterestsComponent implements OnInit {
 
+  @Input() interest: Array<String> = [];
   constructor() { }
 
   ngOnInit() {
+    console.log('--', this.interest);
   }
 
 }

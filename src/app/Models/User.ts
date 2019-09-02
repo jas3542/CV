@@ -1,3 +1,9 @@
+export class SocialMedia {
+    name: string;
+    imagePath: string;
+    website: string;
+}
+
 export class Name {
     name: string;
     surname: string;
@@ -20,6 +26,7 @@ export class User {
     shortDescription: string;
     description: string;
     interests: string[];
+    socialMedia: SocialMedia[];
 
     public addName(name: string, surname: string, surname2: string): void {
         this.name = new Name(name, surname, surname2);

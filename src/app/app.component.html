@@ -1,10 +1,10 @@
 <div class="pageContainer">
   <div class="master">
     <pic name={{user.name.fullName}} shortDescription={{user.shortDescription}}></pic>
-    <social></social>
+    <social socialMedia={{user.socialMedia[0]}}></social>
   </div>
   <div class="detail">
-    <description></description>
-    <interests></interests>
+    <description description={{user.description}}></description>
+    <interests interest={{user.interests}}></interests>
   </div>
 </div>
