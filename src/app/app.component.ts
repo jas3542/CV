@@ -14,6 +14,5 @@ export class AppComponent {
 
   constructor(userService: UserService) {
     this.user = userService.getUserDetails();
-    console.log(this.user);
   }
 }

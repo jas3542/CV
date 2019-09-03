@@ -13,7 +13,6 @@ export class SocialComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('---',this.socialMedia);
   }
 
 }

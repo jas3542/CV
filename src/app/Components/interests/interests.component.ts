@@ -11,7 +11,6 @@ export class InterestsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('--', this.interest);
   }
 
 }

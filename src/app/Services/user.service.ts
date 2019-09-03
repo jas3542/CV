@@ -10,12 +10,15 @@ export class UserService {
   constructor() { }
 
   public getUserDetails(): User {
+
+    const interests = ['Coding', 'Movies', 'Money'];
+
     this.user.addName('Jack', 'Singh', 'Test');
     this.user.age = 12;
     this.user.avatarPath = '../assets/Male-Avatar.png';
     this.user.shortDescription = 'coffee lover & beard lover ';
     this.user.description = "I'm a developer. I worked with C# and Java. I've been exposed to different technologies.I work on this project when i want to learn new things about html,css,bootstrap,angular. I try to use bootstrap as much as i can but sometimes i prefer not to spend my time learning that.";
-    this.user.interests = ['Coding', 'Movies', 'Money'];
+    this.user.interests = interests;
     this.user.sex = 'Male';
     this.user.socialMedia = this.getSocialMediaPaths();
 
@@ -23,10 +26,10 @@ export class UserService {
   }
 
   private getSocialMediaPaths(): SocialMedia[] {
-    let sm  = new SocialMedia();
-    let sm2 = new SocialMedia();
-    let sm3 = new SocialMedia();
-    let smArray: SocialMedia[] = [];
+    const sm  = new SocialMedia();
+    const sm2 = new SocialMedia();
+    const sm3 = new SocialMedia();
+    const smArray: SocialMedia[] = [];
 
     sm.name = 'instagram';
     sm.imagePath = '../../assets/instagram.png';
