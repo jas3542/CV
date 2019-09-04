@@ -7,6 +7,8 @@ import { SocialComponent } from './Components/social/social.component';
 import { DescriptionComponent } from './Components/description/description.component';
 import { InterestsComponent } from './Components/interests/interests.component';
 import { UserService } from './Services/user.service';
+import { ExperienceComponent } from './Components/experience/experience.component';
+import { CertificateComponent } from './Components/certificate/certificate.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { UserService } from './Services/user.service';
     PicComponent,
     SocialComponent,
     DescriptionComponent,
-    InterestsComponent
+    InterestsComponent,
+    ExperienceComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule

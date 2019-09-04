@@ -1,0 +1,15 @@
+<h1>
+    Experience
+</h1>
+<div>
+    <div *ngFor="let exp of experience" class="section" >
+        <h5>{{exp.place}}</h5>
+        {{exp.years}}
+        <ul>
+            <li *ngFor="let task of exp.tasks">
+                {{task}}
+            </li>
+        </ul>
+        <br>
+    </div>
+</div>

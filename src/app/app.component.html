@@ -1,10 +1,15 @@
 <div class="pageContainer">
   <div class="master">
     <pic [name]="user.name.fullName" [shortDescription]="user.shortDescription"></pic>
-    <social [socialMedia]="user.socialMedia"></social>
+    <div>
+      <social [socialMedia]="user.socialMedia"></social>
+    </div>
+    
   </div>
   <div class="detail">
     <description [description]="user.description"></description>
     <interests [interest]="user.interests"></interests>
+    <experience [experience]="user.experience"></experience>
+    <certificate [certificates]="user.certificates"></certificate>
   </div>
 </div>

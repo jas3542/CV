@@ -1,3 +1,9 @@
+export class Experience {
+    place: string;
+    years: string;
+    tasks: string[];
+}
+
 export class SocialMedia {
     name: string;
     imagePath: string;
@@ -27,6 +33,8 @@ export class User {
     description: string;
     interests: string[];
     socialMedia: SocialMedia[];
+    experience: Experience[];
+    certificates: string[];
 
     public addName(name: string, surname: string, surname2: string): void {
         this.name = new Name(name, surname, surname2);

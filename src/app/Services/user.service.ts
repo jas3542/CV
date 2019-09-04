@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { User, SocialMedia } from '../Models/User';
+import { User, SocialMedia, Experience } from '../Models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +21,8 @@ export class UserService {
     this.user.interests = interests;
     this.user.sex = 'Male';
     this.user.socialMedia = this.getSocialMediaPaths();
+    this.user.experience = this.getExperience();
+    this.user.certificates = this.getCertificate();
 
     return this.user;
   }
@@ -49,4 +51,28 @@ export class UserService {
 
     return smArray;
   }
+
+  private getExperience(): Experience[] {
+    const experience: Experience = new Experience();
+    experience.place = 'Garestany olivetti';
+    experience.tasks = ['repair computers', 'setup windows', 'customer Support']
+    experience.years = '14 Juny 2015 - 2 Juny 2016';
+
+    const experience2: Experience = new Experience();
+    experience2.place = 'ForceMan';
+    experience2.tasks = ['debugging', 'upgrading to java8 the whole project', 'customer Support']
+    experience2.years = '14 september 2018 - 2 Juny 2019';
+
+    const experienceArray = [];
+    experienceArray.push(experience, experience2);
+
+    return experienceArray;
+  }
+
+  private getCertificate(): string[] {
+    const certificate = ['Unity3D certificate', 'networking'];
+    return certificate;
+  }
+
 }
+
