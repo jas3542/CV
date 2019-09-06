@@ -1,7 +1,8 @@
 <div id="social-wrapper">
     <a *ngFor="let sm of socialMedia"
         class="section" 
-        href={{sm.website}}>
+        href={{sm.website}}
+        target="_blank">
         <img src="{{sm.imagePath}}" alt="{{sm.name}}">
     </a>
 </div>

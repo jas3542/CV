@@ -9,6 +9,8 @@ import { InterestsComponent } from './Components/interests/interests.component';
 import { UserService } from './Services/user.service';
 import { ExperienceComponent } from './Components/experience/experience.component';
 import { CertificateComponent } from './Components/certificate/certificate.component';
+import { ToolbarComponent } from './Components/toolbar/toolbar.component';
+import { AngularMaterialModule } from './angular-material.module';
 
 
 @NgModule({
@@ -19,10 +21,11 @@ import { CertificateComponent } from './Components/certificate/certificate.compo
     DescriptionComponent,
     InterestsComponent,
     ExperienceComponent,
-    CertificateComponent
+    CertificateComponent,
+    ToolbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, AngularMaterialModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

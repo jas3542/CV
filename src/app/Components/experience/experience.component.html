@@ -4,7 +4,7 @@
 <div>
     <div *ngFor="let exp of experience" class="section" >
         <h5>{{exp.place}}</h5>
-        {{exp.years}}
+        <h6>{{exp.years}}</h6>
         <ul>
             <li *ngFor="let task of exp.tasks">
                 {{task}}

@@ -1,6 +1,8 @@
 img {
     width: 60%;
     height: 70%;
+    display: flex;
+    justify-content: center;
 }
 .col{
     word-break: normal;
@@ -8,4 +10,5 @@ img {
 h4, p{
     text-align: center;
 }
+
 
