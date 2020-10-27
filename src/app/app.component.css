@@ -28,13 +28,13 @@
 }
 .master {
     display: inline-block;
-    width: 15%;
+    /* width: 15%; */
     /* height: 50%; */
     top: 0px;
 }
 .detail {
     display: inline-block;
-    width: 85%;
+    /* width: 85%; */
     /* height: 50%; */
     vertical-align: top;
 }
@@ -46,4 +46,19 @@
     margin-bottom: 2%;
 }
 
-
+/* Responsive design (Smartphones, portrait mode):*/
+@media (max-width: 420px) {
+    .master, .detail {
+        display: inline;
+        width: 100%;
+    }
+}
+/* Responsive design (Smartphones, landscape mode):*/
+@media screen and (orientation:landscape) and (min-width : 321px){
+    .master {
+        width: 30%;
+    }
+    .detail {
+        width: 70%;
+    }
+}
