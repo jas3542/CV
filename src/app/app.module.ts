@@ -11,6 +11,7 @@ import { ExperienceComponent } from './Components/experience/experience.componen
 import { CertificateComponent } from './Components/certificate/certificate.component';
 import { ToolbarComponent } from './Components/toolbar/toolbar.component';
 import { AngularMaterialModule } from './angular-material.module';
+import { StudiesComponent } from './Components/studies/studies.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AngularMaterialModule } from './angular-material.module';
     InterestsComponent,
     ExperienceComponent,
     CertificateComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    StudiesComponent
   ],
   imports: [
     BrowserModule, AngularMaterialModule

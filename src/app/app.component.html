@@ -1,21 +1,35 @@
-<div class="pageContainer">
-  <div class="toolbar-wrapper">
+<div class="pageContainer container-fluid">
+  <div class="toolbar-wrapper row">
     <div class="product-name">CV</div>
     <div class="menu">
       <toolbar></toolbar>
     </div>
   </div>
-  <div class="master">
-    <pic [name]="user.name.fullName" [shortDescription]="user.shortDescription"></pic>
-    <div>
-      <social [socialMedia]="user.socialMedia"></social>
+
+  <div class="row">
+    <div class="master col-md-3 col-xs-12">
+      <pic [name]="user.name.fullName" [shortDescription]="user.shortDescription"></pic>
+      <div>
+        <social [socialMedia]="user.socialMedia"></social>
+      </div>
     </div>
-    
-  </div>
-  <div class="detail">
-    <description [description]="user.description"></description>
-    <interests [interest]="user.interests"></interests>
-    <experience [experience]="user.experience"></experience>
-    <certificate [certificates]="user.certificates"></certificate>
+
+    <div class="detail col col-xs-12">
+      <div class="border rounded border-top-0 border-bottom-0 border-right-0">
+        <description [description]="user.description" ></description>
+      </div>
+      <div class="border rounded border-top-0 border-bottom-0 border-right-0">
+        <interests [interest]="user.interests"></interests>
+      </div>
+      <div class="border rounded border-top-0 border-bottom-0 border-right-0">
+        <experience [experience]="user.experience"></experience>
+      </div>
+      <div class="border rounded border-top-0 border-bottom-0 border-right-0">
+        <studies [studies]="user.studies"></studies>
+      </div>
+      <div class="border rounded border-top-0 border-bottom-0 border-right-0">
+        <certificate [certificates]="user.certificates"></certificate>
+      </div>
+    </div>
   </div>
 </div>

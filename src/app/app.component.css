@@ -1,6 +1,6 @@
 .toolbar-wrapper{
     background-color: grey;
-    width: 100%;
+    /* width: 100%; */
     height: 50px;
     display: flex;
     /* justify-content: center; */
@@ -22,8 +22,8 @@
 }
 
 .pageContainer {
-    height: 100vh;
-    width: 100%;
+    /* height: 100vh; */
+    /* width: 100%; */
     margin-bottom: 1%;
 }
 .master {
@@ -46,14 +46,19 @@
     margin-bottom: 2%;
 }
 
-/* Responsive design (Smartphones, portrait mode):*/
+.border{
+    border-color: DarkSlateBlue !important;
+    border-width: 2px !important;
+}
+/* Using Bootstrap classes I achieved all these:
+/* Responsive design (Smartphones, portrait mode): 
 @media (max-width: 420px) {
     .master, .detail {
         display: inline;
         width: 100%;
     }
 }
-/* Responsive design (Smartphones, landscape mode):*/
+/* Responsive design (Smartphones, landscape mode): 
 @media screen and (orientation:landscape) and (min-width : 321px){
     .master {
         width: 30%;
@@ -62,3 +67,5 @@
         width: 70%;
     }
 }
+
+/* */

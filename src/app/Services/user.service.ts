@@ -11,7 +11,7 @@ export class UserService {
 
   public getUserDetails(): User {
 
-    const interests = ['Coding', 'Movies', 'Money'];
+    const interests = ['Coding', 'Movies', 'Food'];
 
     this.user.addName('Jack', 'Singh', 'Test');
     this.user.age = 12;
@@ -22,6 +22,7 @@ export class UserService {
     this.user.sex = 'Male';
     this.user.socialMedia = this.getSocialMediaPaths();
     this.user.experience = this.getExperience();
+    this.user.studies = this.getStudies();
     this.user.certificates = this.getCertificate();
 
     return this.user;
@@ -67,6 +68,11 @@ export class UserService {
     experienceArray.push(experience, experience2);
 
     return experienceArray;
+  }
+
+  private getStudies(): string[] {
+    const studies = ['Hardware', 'Software'];
+    return studies;
   }
 
   private getCertificate(): string[] {

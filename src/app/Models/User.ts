@@ -34,6 +34,7 @@ export class User {
     interests: string[];
     socialMedia: SocialMedia[];
     experience: Experience[];
+    studies: string[];
     certificates: string[];
 
     public addName(name: string, surname: string, surname2: string): void {
