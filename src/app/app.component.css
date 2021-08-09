@@ -49,6 +49,9 @@
 .border{
     border-color: DarkSlateBlue !important;
     border-width: 2px !important;
+    margin-bottom: 1rem;
+    /* background-color: rgba(217, 255, 255, 0.1); */
+    
 }
 /* Using Bootstrap classes I achieved all these:
 /* Responsive design (Smartphones, portrait mode): 

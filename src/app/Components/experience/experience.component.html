@@ -3,8 +3,7 @@
 </h1>
 <div>
     <div *ngFor="let exp of experience" class="section" >
-        <h5>{{exp.place}}</h5>
-        <h6>{{exp.years}}</h6>
+        <h5 style="display:inline">{{exp.place}}</h5> <h6 style="display:inline"> [ <em>{{exp.years}}</em> ]</h6>
         <ul>
             <li *ngFor="let task of exp.tasks">
                 {{task}}
